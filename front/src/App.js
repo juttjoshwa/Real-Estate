@@ -7,7 +7,7 @@ function App() {
   console.log(user);
   return (
     <div className="App">
-      <button onClick={(e) => loginWithRedirect()}> login with redirect</button>
+      <button onClick={(e) => loginWithRedirect()}> login</button>
     </div>
   );
 }
