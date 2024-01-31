@@ -7,7 +7,7 @@ function App() {
   console.log(user);
   return (
     <div className="App">
-      <button onClick={(e) => loginWithRedirect()}> login</button>
+      <button onClick={(e) => loginWithRedirect()}>Yashwa</button>
     </div>
   );
 }
