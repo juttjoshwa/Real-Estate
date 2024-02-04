@@ -1,14 +1,19 @@
+import { Fragment } from "react";
 import "./App.css";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
 
 function App() {
-  const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
+  const { user, loginWithRedirect, isAuthenticated, isLoading, logout } =
+    useAuth0();
 
-  console.log(user);
   return (
-    <div className="App">
-      <button onClick={(e) => loginWithRedirect()}>Yashwa</button>
-    </div>
+    <Fragment>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Fragment>
   );
 }
 
